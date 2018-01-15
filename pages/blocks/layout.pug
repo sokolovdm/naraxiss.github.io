@@ -1,0 +1,18 @@
+include bemto/bemto.pug
+- set_bemto_settings({ modifier: '--' })
+html(lang="ru")
+	head
+		include head.pug
+		block head
+	body
+		block header
+		#content.content
+			block content
+		include basket.pug
+		link(href="/css/main.min.css?v=1", rel="stylesheet")
+		script(src="https://code.jquery.com/jquery-3.2.1.min.js",integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous",defer)
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js",defer)
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js",defer)
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js",defer)
+		script(src="/js/core.bundle.js",defer)
+		block footer-scripts

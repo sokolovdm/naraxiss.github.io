@@ -1,0 +1,10 @@
+extends blocks/layout.pug
+
+block head
+block header
+	include blocks/header--article-page.pug
+block content
+	include blocks/main--article.pug
+	include blocks/article--self-page.pug
+block footer-scripts
+	script(src="/js/wrapper.bundle.js" defer="defer")

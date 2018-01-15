@@ -1,0 +1,21 @@
++b.header--black
+	+e.container.container
+		+e.button-ham.button.--hamburger
+			span
+		+e.A(href="#").logo
+			include ../../img/logo.svg
+		+e.UL.menu.menu__.--header
+			+e.LI.item.active 
+				a(href="#") Меню
+			+e.LI.item.active 
+				a(href="#") Доставка
+			+e.LI.item.active 
+				a(href="#") На карте
+			+e.LI.item.active 
+				a(href="#") Акции			
+		+e.wrapper
+			+e.A(href="tel:+74959998877").phone.contact--header +7 (495) 999 88 77
+			+e.BUTTON(type="button").call-back.button.--transparent-bordered Обратный звонок
+		+e.basket.button--basket
+			include ../../img/basket.svg
+			p Корзина

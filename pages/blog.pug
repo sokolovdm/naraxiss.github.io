@@ -1,0 +1,12 @@
+extends blocks/layout.pug
+
+block head
+	script(type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat")
+block header
+	include blocks/header--black.pug
+block content
+	include blocks/blog.pug
+	include blocks/footer.pug
+block footer-scripts
+	script(src="/js/map.bundle.js" defer="defer")
+	script(src="/js/header.bundle.js" defer="defer")
