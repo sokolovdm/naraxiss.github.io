@@ -1,0 +1,13 @@
+include bemto/bemto.pug
+- set_bemto_settings({ modifier: '--' })
+html(lang="ru")
+	head
+		include head.pug
+		block head
+	body
+		block header
+		block content
+		include footer.pug
+		link(href="/css/main.min.css", rel="stylesheet")
+		script(src="/js/core.bundle.js",defer)
+		block footer-scripts

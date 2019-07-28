@@ -1,0 +1,37 @@
+include ../bemto/bemto.pug
+- set_bemto_settings({ modifier: '--' })
++b#main.main
+    +e.container.container
+        +e.head
+            h1 SharpShark Protects<br> The Artwork
+            h2 Legal significance of authorship
+            p Frank N. Magill, Roland Barthes, Morris Rosenthal
+        +e.information
+            p Published on:#[span 18 July 2019 at 23:45]
+            p.mobile Feel free to quote #[a(href='https://ss.s/cggr4hfgy') with link]
+            p.desktop Feel free to quote with link #[a(href="https://ss.s/cggr4hfgy") #[span https://ss.s/cggr4hfgy]]
+        +e.content
+            +e.text
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptates.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem blanditiis consequatur cumque dignissimos eos et, facere obcaecati quidem temporibus!
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet animi aperiam, commodi deleniti dignissimos dolorem ea ex expedita illum impedit in, non nulla quas qui quia saepe suscipit unde veniam vero voluptatibus. Commodi consequuntur culpa exercitationem harum illum in maiores minima neque non, officia placeat porro sunt.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores aspernatur assumenda cupiditate, delectus deserunt doloribus dolorum enim esse et explicabo fugiat illum impedit inventore ipsam itaque labore laboriosam magni maiores molestiae molestias mollitia neque non numquam obcaecati officiis perferendis quae quia quidem quo ratione, reprehenderit saepe sapiente suscipit ullam unde vitae! Aliquid, autem consequatur cum dolores earum et explicabo ipsum iusto, molestias mollitia nostrum officiis, pariatur rerum unde voluptatibus?
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, debitis distinctio dolore eligendi esse magnam magni nulla numquam rerum voluptates. Adipisci aliquam amet architecto commodi consectetur consequatur dicta distinctio dolores doloribus ea ex facere facilis fuga fugiat hic in iste magni molestias mollitia nesciunt non, nostrum numquam odio perferendis quam quia ratione recusandae repellat repellendus reprehenderit saepe sit sunt tempora tenetur ut veritatis voluptatibus. Ducimus ea earum id, minus, molestias nam nisi numquam obcaecati, odio praesentium quasi reiciendis tenetur veritatis!
+            +e.qrs
+                +e.qr--blockchain.qr__
+                    +e.image
+                        img(src="/images/qr.png")
+                    +e.text--mobile
+                        p Published on: #[span 18 Sept 2019]
+                    +e.text--desktop
+                        p Date of publication #[span]in NEM2.0 blockchain
+                    +e.name--blockchain #[b B]lockchain #[b C]opyright
+                +e.qr--ipfs.qr__
+                    +e.image--float
+                        img(src="/images/qr.png")
+                    +e.text--mobile
+                        p Artwork #[span in IPFS]
+                    +e.text--desktop
+                        p Original artwork #[span in IPFS]
+                    +e.name--ipfs The artwork reproducing is being monitored by AI 24/7: please, refer its source and author when quoting
+

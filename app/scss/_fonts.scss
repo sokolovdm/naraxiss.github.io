@@ -1,0 +1,20 @@
+@mixin newFont($family,$pathName) {
+	@font-face {
+		font-family: '#{$family}';
+		src: url('/fonts/#{$pathName}.eot');
+		src: url('/fonts/#{$pathName}.eot?iefix') format('emdded-opentype'),
+		url('/fonts/#{$pathName}.woff2') format('woff2'),
+		url('/fonts/#{$pathName}.woff') format('woff'),
+		url('/fonts/#{$pathName}.ttf') format('truetype'),
+		url('/fonts/#{$pathName}.svg##{$pathName}') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@include newFont('sansProReg','SourceSansPro-Regular');
+@include newFont('firaSansReg','FiraSans-Regular');
+@include newFont('firaSansBold','FiraSans-SemiBold');
+@include newFont('garReg','EBGaramond-Regular');
+@include newFont('garMed','EBGaramond-Medium');
+@include newFont('garIt','EBGaramond-Italic');
